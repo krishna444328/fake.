@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Timer Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .header {
+      /* background-image: url('images.jpg'); */
+      background-image: url('images.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 900px;
+      width: 100%;
+      margin-top: -243px;
+    }
+
+    .krishna {
+      width: 100%;
+      height: 72%;
+      text-align: center;
+      color: white;
+      padding: 250px 20px 0;
+    }
+
+    .krishna h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .krishna h2 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .krishna p {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    #subscribe-btn1 {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 24px;
+      margin-top: 30px;
+      width: 260px;
+    }
+
+    #exit-popup {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #333;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 9999;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    #exit-popup h3 {
+      margin-bottom: 10px;
+    }
+
+    #exit-popup button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    /* 📱 Mobile Responsive Styling */
+    @media only screen and (max-width: 600px) {
+      .header {
+        height: auto;
+        margin-top: 0;
+      }
+
+      .krishna {
+        padding: 120px 15px 30px;
+      }
+
+      .krishna h1 {
+        font-size: 22px;
+      }
+
+      .krishna h2 {
+        font-size: 18px;
+      }
+
+      .krishna p {
+        font-size: 18px;
+      }
+
+      #subscribe-btn1 {
+        font-size: 20px;
+        width: 200px;
+        padding: 8px 15px;
+      }
+
+      #exit-popup {
+        width: 90%;
+        padding: 15px;
+      }
+
+      #exit-popup button {
+        font-size: 16px;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="krishna">
+      <h1>WELCOME TO 𝙵𝚁𝙴𝙴 𝙵𝙾𝙻𝙻𝙾𝚆𝙴𝚁𝚂 WEBSITE</h1>
+      <h2>Read Note👇</h2>
+      <p>फ्री फॉलोअर्स पाने के लिए पहले शॉर्ट्स को पूरा देखें, फिर लाइक करें और उसके बाद चैनल को सब्सक्राइब करें उसके बाद कृपया इस पेज पर 10-15 सेकंड तक इंतजार करें।!</p>
+      <button id="subscribe-btn1">Subscribe Now</button>
+    </div>
+    <div id="exit-popup">
+      <h3>Read Note👇</h3>
+      <p>आप ने सभी स्टेप्स पूरे किए धन्यवाद! अब यह रहा फॉलोवर्स का बटन:😊</p>
+      <button id="subscribe-btn">FREE FOLLOWERS</button>
+    </div>
+  </header>
+
+  <script>
+    var exitPopup = document.getElementById('exit-popup');
+    var subscribeButton = document.getElementById('subscribe-btn');
+    var subscribeButton1 = document.getElementById('subscribe-btn1');
+
+    // Show popup after 15.5 seconds
+    setTimeout(function () {
+      exitPopup.style.display = 'block';
+    }, 15500);
+
+    subscribeButton.addEventListener('click', function () {
+      window.location.href = "https://www.techyhit.com/instagram/home";
+    });
+
+    subscribeButton1.addEventListener('click', function () {
+      window.location.href = "https://youtube.com/shorts/J8fkCw6FXJQ?si=rgwfzi3ZAgaTbTKK";
+    });
+  </script>
+</body>
+</html>
